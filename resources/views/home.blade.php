@@ -11,7 +11,7 @@
         <div class="row">
                 @foreach ($comics as $comic)
                 <div class="col-2">
-                    <img src="{{$comic['thumb']}}" alt="" class="thumb img-fluid">
+                    <img src="{{$comic['thumb']}}" alt="" class="mythumb img-fluid">
                     <p>{{$comic['title']}}</p>
                 </div>
                 @endforeach
