@@ -53,12 +53,19 @@ body{
             padding: 13px;
             background-color: $lightblue;
             font-weight: bold;
-            color: #fff;
             border: none;
             font-size: 1.2em;
             position: absolute;
             bottom: -25px;
             left: 300px;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                &:hover{
+                    color: $black;
+                }
+            }
         }
     }
 

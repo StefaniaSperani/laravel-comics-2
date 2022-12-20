@@ -2,7 +2,9 @@
 
 @section('content')
 <div id="jumbo">
-    <button class="series">Current Series</button>
+    <button class="series">
+        <a href="{{route('comics.index')}}">Current Series</a>
+    </button>
 </div>
 <section id="comics">
     <div class="container">
