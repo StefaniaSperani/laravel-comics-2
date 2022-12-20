@@ -1,1 +1,206 @@
-@import '~bootstrap/scss/bootstrap'
+@use './partials/variables' as *;
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+    font-family: $main_font;
+    color: #fff;
+
+
+    header {
+        height: 7rem;
+        font-size: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .container{
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        img {
+            max-width: 70%;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            text-transform: uppercase;
+            overflow: hidden;
+            li {
+                margin: 1.3rem;
+                display: inline-block;
+                color: $black;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 2.7rem 0;
+                &.active,
+                &:hover {
+                    border-bottom: 5px solid $lightblue;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    #jumbo {
+        background-image: url(../img/jumbotron.jpg);
+        min-height: 400px;
+        position: relative;
+
+        .series {
+            text-transform: uppercase;
+            padding: 13px;
+            background-color: $lightblue;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            font-size: 1.2em;
+            position: absolute;
+            bottom: -25px;
+            left: 300px;
+        }
+    }
+
+    #comics{
+        background-color: $black;
+        min-height: 200px;
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 2em 0
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        padding: 0.5em;
+        .col {
+            width: calc(100% / 6);
+            padding: 0.7em;
+        }
+        img {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+
+            .thumb {
+                object-position: 0% 0%;
+            }
+        }
+        p {
+            padding: 0.5em 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+    #merch {
+        background-color: $lightblue;
+        min-height: 200px;
+    div {
+        padding: 2em 0.6em;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #fff;
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+    img {
+        width: 60px;
+        height: 76px;
+    }
+    span {
+        padding: 0 1.5rem;
+        cursor: pointer;
+        width: max-content;
+    }
+}
+
+
+    footer {
+        background-image: url(../img/footer-bg.jpg);
+        min-height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    div {
+        display: flex;
+        justify-content: space-between;
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0em;
+        }
+        .list {
+            display: flex;
+            height: 100%;
+        }
+        .title {
+            font-size: 1.5em;
+            line-height: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .list>ul {
+            padding: 1.7em;
+        }
+        li {
+            list-style: none;
+            line-height: 1.5em;
+            text-decoration: none;
+            color: $icons;
+        }
+    }
+    .imageFooter {
+        width: 600px;
+        height: 430px;
+        background-image: url(../img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+    
+    #footer2 {
+        background-color: $footer2;
+        height: 7rem;
+        .container {
+            height: 100%;
+            padding: 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            background-color: transparent;
+            border: 2px solid $lightblue;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .follow-us {
+            display: flex;
+            gap: 17px;
+            h2 {
+                text-transform: uppercase;
+                color: $lightblue;
+                margin: 0 0.5em;
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}

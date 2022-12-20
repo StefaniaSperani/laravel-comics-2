@@ -6,7 +6,7 @@ use App\Models\Comic;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Comic extends Controller
+class ComicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class Comic extends Controller
      */
     public function index()
     {
-        $products = Comic::all();
+        $comics = Comic::all();
         return view('comics.index', compact('comics'));
     }
 
