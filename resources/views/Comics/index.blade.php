@@ -8,5 +8,6 @@
             <li><a href="{{route('comics.show', $comic->id)}}">{{$comic->title}}</a></li>
         @endforeach
     </ul>
+    <button type="button" class="btn btn-primary my-2"><a href="{{route('comics.create')}}" class="text-white text-decoration-none">Invia il tuo fumetto!</a></button>
 </section>
 @endsection

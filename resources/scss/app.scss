@@ -7,7 +7,6 @@ body{
     font-family: $main_font;
     color: #fff;
 
-
     header {
         height: 7rem;
         font-size: 400;
@@ -78,6 +77,7 @@ body{
         margin: 0 auto;
         padding: 2em 0
     }
+
     .row {
         display: flex;
         justify-content: space-between;
