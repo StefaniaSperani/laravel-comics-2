@@ -8,7 +8,7 @@ body{
     color: #fff;
 
     header {
-        height: 7rem;
+        height: 6.2rem;
         font-size: 400;
         display: flex;
         justify-content: space-between;
@@ -27,16 +27,19 @@ body{
             text-transform: uppercase;
             overflow: hidden;
             li {
-                margin: 1.3rem;
+                margin: 1rem;
+                border-bottom: 5px solid #fff;
                 display: inline-block;
                 color: $black;
                 text-decoration: none;
                 font-weight: 600;
-                padding: 2.7rem 0;
+                padding: 0.7rem 0;
+                transition: border 0.5s;
                 &.active,
                 &:hover {
+                    cursor: pointer;
                     border-bottom: 5px solid $lightblue;
-                    transition: 0.3s;
+                    
                 }
             }
         }
