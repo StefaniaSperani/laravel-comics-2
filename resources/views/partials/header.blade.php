@@ -1,5 +1,5 @@
 <header class="container">
-    <a href="#">
+    <a href="{{route('home')}}">
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="Logo">
     </a>
     <nav>

@@ -9,7 +9,11 @@
             <h3>{{$comic->series}} - {{$comic->price}}</h3>
             <p>{{$comic->description}}</p>
             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-primary">Modifica</a>
-            {{-- <a href="{{route('comics.delete', $comic->id)}}" class="btn btn-danger ms-3">Cancella</a> --}}
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="d-inline">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger ms-3">Cancella</button>
+            </form>
         </div>
 
     </div>

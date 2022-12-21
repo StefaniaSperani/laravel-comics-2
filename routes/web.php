@@ -19,5 +19,5 @@ Route::get('/', function () {
     $comics = Comic::all();
     //dd($comics);
     return view('home', compact('comics'));
-});
+})->name('home');
 Route::resource('comics', ComicController::class);
