@@ -11,7 +11,9 @@
         <div class="row">
                 @foreach ($comics as $comic)
                 <div class="col-2">
+                    <a href="{{route('comics.show', $comic->id)}}">
                     <img src="{{$comic['thumb']}}" alt="" class="mythumb img-fluid">
+                </a>
                     <p>{{$comic['title']}}</p>
                 </div>
                 @endforeach
